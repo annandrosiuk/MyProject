@@ -220,7 +220,7 @@
 
 // section one
 .one {
-  background: url(/img/photo.jpg) no-repeat;
+  background: url("../img/photo.jpg") no-repeat;
   background-position: center center;
   background-size: cover; 
   padding-top: 18rem;
@@ -299,7 +299,7 @@
 .photo-circle{
   width: 14rem;
   height: 14rem;
-  background: url(/img/Layer_8.jpg);
+  background: url("../img/Layer_8.jpg");
   background-position: center center;
   background-size: cover; 
   border-radius: 50%; 
@@ -329,35 +329,35 @@
 }
 
 .photo1{
-  background: url(/img/Layer_1.jpg) no-repeat;
+  background: url("../img/Layer_1.jpg") no-repeat;
 }
 
 .photo2{
-  background: url(/img/Layer_2.jpg) no-repeat;
+  background: url("../img/Layer_2.jpg") no-repeat;
 }
 
 .photo3{
-  background: url(/img/Layer_3.jpg) no-repeat;
+  background: url("../img/Layer_3.jpg") no-repeat;
 }
 
 .photo4{
-  background: url(/img/Layer_4.jpg) no-repeat;
+  background: url("../img/Layer_4.jpg") no-repeat;
 }
 
 .photo5{
-  background: url(/img/Layer_5.jpg) no-repeat;
+  background: url("../img/Layer_5.jpg") no-repeat;
 }
 
 .photo6{
-  background: url(/img/Layer_6.jpg) no-repeat;
+  background: url("../img/Layer_6.jpg") no-repeat;
 }
 
 .photo7{
-  background: url(/img/Layer_6.jpg) no-repeat;
+  background: url("../img/Layer_6.jpg") no-repeat;
 }
 
 .photo8{
-  background: url(/img/Layer_6.jpg) no-repeat;
+  background: url("../img/Layer_6.jpg") no-repeat;
 }
 
 .photo-hover {
