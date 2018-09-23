@@ -1,0 +1,73 @@
+.buttons-main {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+}
+
+.btn-left {
+    margin-right: 1.5rem; 
+}
+.btn-right {
+    margin-left: 1.5rem; 
+}
+
+.btn{
+    border: .2rem solid $white;
+    border-radius: 3rem;
+    color: $white;
+    font-family: $os;
+    font-size: $f14;
+    text-transform: uppercase;
+    padding: 2rem 4rem;
+    letter-spacing: .28rem;
+    font-weight: 700;
+    transition: all ease-in 140ms;
+}
+
+.btm-small {
+    font-size: $f11;
+    padding: 1.5rem 3.5rem;
+    letter-spacing: .1rem;
+}
+
+.btn-green{
+    color: $green;
+    border: .2rem solid $green;
+
+    &:focus{
+        color: $green;
+    }
+}
+
+.hover-green:hover {
+    background: $green;
+    color: $white;
+    transition: all ease-in 140ms;
+}
+
+.btn-orange {
+    background: $orange;
+    color: $white;
+    border-color: $orange; 
+}
+
+.btn-orange-hover:hover{
+    border: .2rem solid $white;
+    color: $orange;
+    background-color: $white;
+    transition: all ease-in 140ms;
+}
+
+.btn-white{
+    &:focus{
+        color: $white;
+    }
+    &:hover {
+    color: $green;
+    background-color: $white;
+    transition: all ease-in 140ms;
+    }
+    
+}
+
+
+

@@ -1,0 +1,63 @@
+//typography
+.h1 {
+    font-size: $f48;
+    color: $white;
+    font-family: $mp;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 1.4rem;
+}
+
+.h2 {
+    color: $green;
+    text-transform: uppercase;
+    font-size: $f14;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.h3 {
+    color: $black;
+    font-size: $f36;
+    font-family: $mb;
+}
+
+.h4{
+    font-size: $f24;
+}
+
+.h5{
+    color: $white;
+    font-family: $mb;
+    font-size: $f22;
+}
+
+.p{
+    font-size: $f16;
+    opacity: .7;
+    font-family: $os;
+}
+
+.a {
+    color: $green;
+    text-decoration: underline;
+    font-size: $f16;
+    transition: all ease-in 140ms;
+
+    &:hover, &:active, &:focus {
+        color: $orange;
+        transition: all ease-in 140ms;
+    }
+}
+
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: none;
+}
+
+.font-logo{
+    font-size: $f24;
+    font-family: $mb;
+    color: $white;
+}

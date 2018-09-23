@@ -1,0 +1,457 @@
+//header
+.header{
+  width: 100%;
+  padding: 3.5rem 0; 
+  position: absolute;
+  z-index: 10;
+  transition: background .5s;
+  //border: 1px solid bisque;
+}
+
+.header-scroll{
+  position: fixed;
+  background-color: rgba($color: $brown, $alpha: .98);
+  z-index: 20;
+  padding: 2rem 0;
+}
+
+//content
+.content {
+  width: 83.45%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.content-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-flex1{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content-center {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+//main-content
+.opacity {
+  opacity: .7;
+}
+
+.bold {
+  font-weight: bold;
+  color: $black;
+}
+
+.italic {
+  font-style: italic;
+  font-family: $os;
+  letter-spacing: -0.1rem;
+}
+
+.add{
+  font-size: $f12;
+}
+
+.h2-last{
+  color: $f;
+}
+
+.align-left{
+  text-align: left;
+}
+
+.my-href{
+  text-transform: uppercase;
+}
+
+//main-menu
+.main-menu li{
+  display: inline-block;
+  margin-left: 5rem;
+}
+
+.main-menu li:first-child{
+  margin-left: 0;
+}
+
+.main-menu li a{
+  text-transform: uppercase;
+  font-size: $f12;
+  color: $white;
+  opacity: .3;
+  font-family: $mp;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  transition: all ease-in 140ms; 
+  position: relative;
+
+  &:hover{
+    opacity: 1;
+    transition: all ease-in 140ms; 
+    text-decoration: none;
+  }
+
+  &:not(#current):hover:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-top: .2rem solid $green;
+    bottom: -1rem;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+#current{
+  opacity: 1;
+  border-bottom: .2rem solid $green;
+  padding-bottom: 1rem;
+
+  
+}
+//form-section
+.form-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  background-color: rgba($color: $brown, $alpha: .95);
+}
+
+.form-contain {
+  margin: 7rem auto;
+  width: 60%;
+  opacity: 1;
+  z-index: 30;
+
+  .content-flex{
+    width: 83.45%;
+    margin: 3rem auto;
+  }
+}
+
+.form1 {
+  width: 35%;
+  max-width: 33%;
+
+  .p {
+    color: $white;
+    opacity: .3;
+  }
+
+  .bold{
+    color: $white;
+    opacity: 1;
+  }
+}
+
+.form2 {
+  width: 65%;
+  max-width: 60%;
+}
+
+.input{
+  width: 100%;
+  border-radius: .5rem;
+  border: none;
+  padding: 1.5rem 2rem;
+  font-size: $f16;
+  color: rgba($color: $brown, $alpha: .7);
+
+  &:hover{
+    border:0.2rem solid $orange;
+  }
+
+  &:focus{
+    outline: none;
+    border:0.2rem solid $orange;
+  }
+
+}
+
+.input1{
+  height: 5rem;
+}
+
+.textarea{
+  height: 19rem;
+  resize: none;
+  min-height: 19rem;
+
+}
+
+.message-send{
+  .p {
+    color: $white;
+    opacity: 1;
+    letter-spacing: 0.3rem;
+  }
+}
+
+.form-close {
+  content: "+";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 2rem;
+  transform: rotate(45deg);
+  cursor: pointer;
+  z-index: 100; 
+  color: $white;
+  font-size: $f36;
+}
+
+.burger-show {
+  opacity: 1;
+  z-index: 100; 
+}
+
+// section one
+.one {
+  background: url(/img/photo.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  padding-top: 18rem;
+  position: relative;
+  border-bottom: 1rem solid $green;
+}
+
+.one:after{
+  content: " ";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  background: $brown;
+  opacity: .7;
+}
+
+//section two
+.two{
+  background-color: white;
+  overflow: hidden;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  width: 33%;
+  max-width: 28%;
+}
+
+.circle {
+  width: 16.6rem;
+  height: 16.6rem;
+  background-color: $green;
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  &:hover .triangle{
+    stroke-dasharray: 17;
+    animation: dash 2.5s cubic-bezier(0.35, 0.04, 0.63, 0.95) infinite;
+  }
+}
+
+.triangle{
+  fill: transparent;
+  stroke: $white;
+  stroke-width: 2;
+  transition: all 0.8s ease-in-out;
+}
+
+@keyframes dash{
+  0%{
+    stroke-dashoffset: 136;
+  }
+}
+	
+//three
+.three{
+  background-color: $a;
+  overflow: hidden;
+}
+
+.cards-about {
+  align-items: flex-start;
+}
+
+.photo-circle{
+  width: 14rem;
+  height: 14rem;
+  background: url(/img/Layer_8.jpg);
+  background-position: center center;
+  background-size: cover; 
+  border-radius: 50%; 
+  margin: 0 auto;
+}
+
+//four
+.four{
+  background-color: white;
+  overflow: hidden;
+}
+
+.project-photos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.photo{
+  width: 100%;
+  max-width: 27rem;
+  height: 19.7rem;
+  box-shadow: inset 0 0 0 5px $white;
+  border-radius: .5rem;
+  border: 1px solid #ede9e0;
+  margin-bottom: 4rem;
+}
+
+.photo1{
+  background: url(/img/Layer_1.jpg) no-repeat;
+}
+
+.photo2{
+  background: url(/img/Layer_2.jpg) no-repeat;
+}
+
+.photo3{
+  background: url(/img/Layer_3.jpg) no-repeat;
+}
+
+.photo4{
+  background: url(/img/Layer_4.jpg) no-repeat;
+}
+
+.photo5{
+  background: url(/img/Layer_5.jpg) no-repeat;
+}
+
+.photo6{
+  background: url(/img/Layer_6.jpg) no-repeat;
+}
+
+.photo7{
+  background: url(/img/Layer_6.jpg) no-repeat;
+}
+
+.photo8{
+  background: url(/img/Layer_6.jpg) no-repeat;
+}
+
+.photo-hover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: $orange, $alpha: .9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+//fifth
+.fifth{
+  background-color: $a;
+  overflow: hidden;
+}
+
+//six
+.six{
+  background-color: white;
+  overflow: hidden;
+}
+//footer
+.footer{
+  background-color: $brown;
+  overflow: hidden;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.link-icon {
+  width: 7rem;
+  height: 7rem;
+  border: 2px solid $f;
+  border-radius: 50%;
+  margin-right: 3rem;
+  color: $white;
+  opacity: .7;
+  padding-top: 1.6rem;
+  transition: all ease-in 140ms;
+
+  &:hover {
+    transition: all ease-in 140ms;
+    background-color: $white; 
+    border: 2px solid $white;
+    color: $orange;
+    opacity: 1;
+
+    a{
+      color: $orange;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+    transition: all ease-in 140ms;
+  }
+
+}
+
+.link-icon:last-child{
+  margin-right: 0;
+}
+
+//---------- MEDIA ------------
+
+@media (max-width: 1280px) {
+  .photo{
+    max-width: 25rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .photo{
+    max-width: 20rem;
+    height: 15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  max-width: 25rem;
+  height: 19.7rem;
+  flex:1 2 50%;
+}
+
+@media (max-width: 414px) {
+  
+}
+
+@media (max-width: 320px) {
+  
+}
