@@ -4,3 +4,24 @@
     }
   }
       
+
+  //Mixins
+@mixin basic($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin indents($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+@mixin position ($position, $top, $left) {
+  position: $position;
+  top: $top;
+  left: $left;
+}
+@mixin position1 ($position, $bottom, $left) {
+  position: $position;
+  bottom: $bottom;
+  left: $left;
+}

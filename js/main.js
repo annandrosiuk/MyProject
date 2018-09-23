@@ -53,8 +53,40 @@ function onScroll(event){
     });
 }
 //---------------------END OF HEADER --------------------------
+/*------Show/hide burger menu list-------*/
+$('.navigation-toggle').on('click',function() {
 
+    if($('.navigation-target').hasClass('clicked')){
+      $('.navigation-target').removeClass('clicked');
+      $('.dropdown-menu').slideUp();
+        
+    }
+    else{
+      $('.navigation-target').addClass('clicked');
+      $('.dropdown-menu').slideDown();
+    }
+  });
 
+  $(document).ready(function () {
+    
+    //smoothscroll
+    $('.mobile-menu a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+      
+        var target = this.hash;
+        $target = $(target);
+
+        $(".dropdown-menu").slideUp();
+        $('.navigation-target').removeClass('clicked');
+        
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target; 
+        });
+    });
+});
 
 //form-section
 $(".btn-form").click(function(){
