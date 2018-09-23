@@ -918,7 +918,7 @@ a:focus, a:hover {
   z-index: 100; }
 
 .one {
-  background: url("../img/photo.jpg") no-repeat;
+  background: url("/img/photo.jpg") no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
           background-size: cover;
