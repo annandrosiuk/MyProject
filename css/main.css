@@ -83,36 +83,6 @@ table {
   font-weight: normal;
   font-style: normal; }
 
-.mar-top50 {
-  margin-top: 5rem; }
-
-.mar-top100 {
-  margin-top: 10rem; }
-
-.mar-bot10 {
-  margin-bottom: 1rem; }
-
-.mar-bot15 {
-  margin-bottom: 1.5rem; }
-
-.mar-bot20 {
-  margin-bottom: 2rem; }
-
-.mar-bot25 {
-  margin-bottom: 2.5rem; }
-
-.mar-bot35 {
-  margin-bottom: 3.5rem; }
-
-.mar-bot40 {
-  margin-bottom: 4rem; }
-
-.mar-bot50 {
-  margin-bottom: 5rem; }
-
-.mar-bot100 {
-  margin-bottom: 10rem; }
-
 .h1 {
   font-size: 4.8rem;
   color: #fff;
@@ -168,6 +138,53 @@ a:focus, a:hover {
   font-size: 2.4rem;
   font-family: "Merriweather-Black";
   color: #fff; }
+
+.bold {
+  font-weight: bold;
+  color: #000; }
+
+.italic {
+  font-style: italic;
+  font-family: "Open Sans";
+  letter-spacing: -0.1rem; }
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 136; } }
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 136; } }
+
+.mar-top50 {
+  margin-top: 5rem; }
+
+.mar-top100 {
+  margin-top: 10rem; }
+
+.mar-bot10 {
+  margin-bottom: 1rem; }
+
+.mar-bot15 {
+  margin-bottom: 1.5rem; }
+
+.mar-bot20 {
+  margin-bottom: 2rem; }
+
+.mar-bot25 {
+  margin-bottom: 2.5rem; }
+
+.mar-bot35 {
+  margin-bottom: 3.5rem; }
+
+.mar-bot40 {
+  margin-bottom: 4rem; }
+
+.mar-bot50 {
+  margin-bottom: 5rem; }
+
+.mar-bot100 {
+  margin-bottom: 10rem; }
 
 .buttons-main {
   margin-top: 15rem;
@@ -450,36 +467,6 @@ table {
   font-weight: normal;
   font-style: normal; }
 
-.mar-top50 {
-  margin-top: 5rem; }
-
-.mar-top100 {
-  margin-top: 10rem; }
-
-.mar-bot10 {
-  margin-bottom: 1rem; }
-
-.mar-bot15 {
-  margin-bottom: 1.5rem; }
-
-.mar-bot20 {
-  margin-bottom: 2rem; }
-
-.mar-bot25 {
-  margin-bottom: 2.5rem; }
-
-.mar-bot35 {
-  margin-bottom: 3.5rem; }
-
-.mar-bot40 {
-  margin-bottom: 4rem; }
-
-.mar-bot50 {
-  margin-bottom: 5rem; }
-
-.mar-bot100 {
-  margin-bottom: 10rem; }
-
 .h1 {
   font-size: 4.8rem;
   color: #fff;
@@ -535,6 +522,49 @@ a:focus, a:hover {
   font-size: 2.4rem;
   font-family: "Merriweather-Black";
   color: #fff; }
+
+.bold {
+  font-weight: bold;
+  color: #000; }
+
+.italic {
+  font-style: italic;
+  font-family: "Open Sans";
+  letter-spacing: -0.1rem; }
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 136; } }
+
+.mar-top50 {
+  margin-top: 5rem; }
+
+.mar-top100 {
+  margin-top: 10rem; }
+
+.mar-bot10 {
+  margin-bottom: 1rem; }
+
+.mar-bot15 {
+  margin-bottom: 1.5rem; }
+
+.mar-bot20 {
+  margin-bottom: 2rem; }
+
+.mar-bot25 {
+  margin-bottom: 2.5rem; }
+
+.mar-bot35 {
+  margin-bottom: 3.5rem; }
+
+.mar-bot40 {
+  margin-bottom: 4rem; }
+
+.mar-bot50 {
+  margin-bottom: 5rem; }
+
+.mar-bot100 {
+  margin-bottom: 10rem; }
 
 .buttons-main {
   margin-top: 15rem;
@@ -778,15 +808,6 @@ a:focus, a:hover {
 .opacity {
   opacity: .7; }
 
-.bold {
-  font-weight: bold;
-  color: #000; }
-
-.italic {
-  font-style: italic;
-  font-family: "Open Sans";
-  letter-spacing: -0.1rem; }
-
 .add {
   font-size: 1.2rem; }
 
@@ -918,7 +939,7 @@ a:focus, a:hover {
   z-index: 100; }
 
 .one {
-  background: url("/img/photo.jpg") no-repeat;
+  background: url("../img/photo.jpg") no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -990,14 +1011,6 @@ a:focus, a:hover {
   -webkit-transition: all 0.8s ease-in-out;
   -o-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out; }
-
-@-webkit-keyframes dash {
-  0% {
-    stroke-dashoffset: 136; } }
-
-@keyframes dash {
-  0% {
-    stroke-dashoffset: 136; } }
 
 .three {
   background-color: #f6f4ef;

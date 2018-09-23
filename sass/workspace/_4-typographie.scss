@@ -61,3 +61,14 @@ a:focus, a:hover {
     font-family: $mb;
     color: $white;
 }
+
+.bold {
+    font-weight: bold;
+    color: $black;
+}
+  
+.italic {
+    font-style: italic;
+    font-family: $os;
+    letter-spacing: -0.1rem;
+}

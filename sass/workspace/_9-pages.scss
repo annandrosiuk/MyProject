@@ -45,17 +45,6 @@
   opacity: .7;
 }
 
-.bold {
-  font-weight: bold;
-  color: $black;
-}
-
-.italic {
-  font-style: italic;
-  font-family: $os;
-  letter-spacing: -0.1rem;
-}
-
 .add{
   font-size: $f12;
 }
@@ -114,9 +103,8 @@
   opacity: 1;
   border-bottom: .2rem solid $green;
   padding-bottom: 1rem;
-
-  
 }
+
 //form-section
 .form-section {
   position: fixed;
@@ -220,7 +208,7 @@
 
 // section one
 .one {
-  background: url("/img/photo.jpg") no-repeat;
+  background: url("../img/photo.jpg") no-repeat;
   background-position: center center;
   background-size: cover; 
   padding-top: 18rem;
@@ -280,13 +268,7 @@
   transition: all 0.8s ease-in-out;
 }
 
-@keyframes dash{
-  0%{
-    stroke-dashoffset: 136;
-  }
-}
-	
-//three
+//section three
 .three{
   background-color: $a;
   overflow: hidden;
@@ -306,7 +288,7 @@
   margin: 0 auto;
 }
 
-//four
+//section four
 .four{
   background-color: white;
   overflow: hidden;
@@ -370,13 +352,13 @@
   flex-direction: column;
 }
 
-//fifth
+//section fifth
 .fifth{
   background-color: $a;
   overflow: hidden;
 }
 
-//six
+//section six
 .six{
   background-color: white;
   overflow: hidden;
