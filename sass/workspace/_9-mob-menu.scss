@@ -134,5 +134,33 @@
   }
   .mobile-nav {
     display: inline-block;
+  }  
+}
+
+@media (max-width: 536px) {
+  .dropdown-menu li{
+    font-size: $f12;
+
+    &:first-child{
+      margin-left: 1rem;
+    }
+
+    &:last-child{
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .dropdown-menu li{
+    font-size: .9rem;
+
+    &:first-child{
+      margin-left: .5rem;
+    }
+
+    &:last-child{
+      margin-right: .5rem;
+    }
   }
 }

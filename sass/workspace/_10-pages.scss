@@ -108,6 +108,7 @@
 //form-section
 .form-section {
   position: fixed;
+  overflow-y:scroll;
   top: 0;
   left: 0;
   right: 0;
@@ -177,7 +178,7 @@
   height: 19rem;
   resize: none;
   min-height: 19rem;
-
+  margin-bottom: 4rem;
 }
 
 .message-send{
@@ -312,34 +313,50 @@
 
 .photo1{
   background: url("../img/Layer_1.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .photo2{
   background: url("../img/Layer_2.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .photo3{
   background: url("../img/Layer_3.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .photo4{
   background: url("../img/Layer_4.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .photo5{
   background: url("../img/Layer_5.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .photo6{
   background: url("../img/Layer_6.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .photo7{
   background: url("../img/Layer_6.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .photo8{
   background: url("../img/Layer_6.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .photo-hover {
@@ -418,28 +435,178 @@
 }
 
 @media (max-width: 1200px) {
+  .form-contain{
+    width: 65%;
+    margin: 5rem auto;
+  }
+
+  .input1{
+    height: 5rem;
+  }
+  
+  .textarea{
+    height: 13rem;
+    resize: none;
+    min-height: 15rem;
+    margin-bottom: 2rem;
+  }
+
   .photo{
     max-width: 20rem;
     height: 15rem;
   }
 }
 
-@media (max-width: 868px) {
-  
+@media (max-width: 958px) {
+  .form-contain{
+    width: 80%;
+  }
+
+  .one .h1{
+    font-size: $f36;
+    letter-spacing: 1.2rem;
+  }
+
+  .photo{
+    max-width: 30rem;
+    height: 22rem;
+  }
+}
+
+@media (max-width: 872px) {
+  .card {
+    .h4{
+      font-size: $f20;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-  max-width: 25rem;
-  height: 19.7rem;
-  flex:1 2 50%;
+  .one .h1{
+    font-size: $f24;
+    letter-spacing: 1rem;
+    line-height: 5.4rem;
+  }
 
+  .card {
+    .h4{
+      font-size: $f16;
+    }
+
+    .p{
+      font-size: $f14;
+    }
+
+    .btn{
+      font-size: $f12;
+      padding: 1rem 2rem;
+    }
+  }
   
+  .circle {
+    width: 15.5rem;
+    height: 15.5rem;
+  }
+
+  .slider .slider__contents .p-responds{
+	  max-width: 70%;
+	}
+}
+
+@media (max-width: 536px) {
+  .content {
+    .h2{
+      font-size: $f12;
+      margin-bottom: 5rem;
+    }
+  }
+
+  .form-section{
+    .h1,
+    .form-close{
+      font-size: $f24;
+    }
+
+    .form1 .p{
+      font-size: $f14;
+    }
+
+    .form2 {
+      .input1{
+        height: 4rem;
+      }
+      
+      .textarea{
+        height: 15rem;
+        max-height: 15rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .cards{
+    flex-direction: column;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 80%;
+    margin-bottom: 5rem;
+
+    .h4{
+      font-size: $f24;
+    }
+
+    .p{
+      font-size: $f16;
+    }
+
+    .btn{
+      font-size: $f14;
+      padding: 2rem 4rem;
+    }
+  }
+
+  .cards-about {
+    align-items: center;
+  }
+  
+  .circle {
+    width: 16.6rem;
+    height: 16.6rem;
+  }
+
+  .slider .slider__contents .p-responds{
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 514px) {
+  .one .h1{
+      font-size: $f22;
+      letter-spacing: .6rem;
+      line-height: 4.4rem;
+  }
+
+  .buttons-main {
+    .btn-left{
+      margin-right: .5rem;
+    }
+    .btn-right{
+      margin-left: .5rem; 
+    }
+  }
 }
 
 @media (max-width: 414px) {
   
 }
 
+
 @media (max-width: 320px) {
-  
+  .one .h1{
+    font-size: $f20;
+    letter-spacing: .4rem;
+    line-height: 3.4rem;
+}
 }

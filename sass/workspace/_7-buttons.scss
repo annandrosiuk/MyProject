@@ -68,3 +68,21 @@
     }
     
 }
+
+
+.form2 *:invalid ~ .btn { 
+    pointer-events: none;
+    background: rgba($color: $white, $alpha: .8);
+    border: .2rem solid rgba($color: $brown, $alpha: .7);
+    color: $light-brown;
+    cursor:default;    
+  }
+  
+  .btn[disabled],
+  .form2 input:invalid ~ .btn:not([disabled]) { 
+      display: none; 
+  }
+  .btn:not([disabled]) ,
+  .form2 input:invalid ~ .btn[disabled] {
+      display:inline-block;
+  }

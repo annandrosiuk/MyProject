@@ -93,15 +93,17 @@ $(".btn-form").click(function(){
     $(".form-section").addClass('burger-show');
 });
 
-$(".form-close").click(function(){
+$(".form-close").click(function(e){
     $(".form-section").removeClass('burger-show');
     $(".form-info").removeClass('hidden');
     $(".message-send").addClass('hidden');
+    $('.input').val('');
 });
 
-$(".btn-message").click(function(){
+$(".btn-message").click(function(e){
     $(".form-info").addClass('hidden');
     $(".message-send").removeClass('hidden');
+    $('.input').val('');
 });
 
 jQuery(function($){
@@ -112,6 +114,7 @@ jQuery(function($){
             $(".form-section").removeClass('burger-show');
             $(".form-info").removeClass('hidden');
             $(".message-send").addClass('hidden');
+            $('.input').val('');
         }
     });
 });

@@ -9,7 +9,7 @@ $active-color: $green;
 	position: relative;
 	overflow: hidden;
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	align-items: flex-end;
 	justify-content: center;
 	
@@ -112,3 +112,4 @@ $active-color: $green;
 			0 0 0 0 rgba($active-color,0);
 	}
 }
+  
