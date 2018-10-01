@@ -156,6 +156,46 @@ a:focus, a:hover {
   0% {
     stroke-dashoffset: 136; } }
 
+@-webkit-keyframes slide {
+  0% {
+    clip: rect(0, 0, 20px, 0); }
+  30% {
+    clip: rect(0, 80px, 20px, 0); }
+  50% {
+    clip: rect(0, 80px, 20px, 0); }
+  80% {
+    clip: rect(0, 80px, 20px, 80px); }
+  100% {
+    clip: rect(0, 80px, 20px, 80px); } }
+
+@keyframes slide {
+  0% {
+    clip: rect(0, 0, 20px, 0); }
+  30% {
+    clip: rect(0, 80px, 20px, 0); }
+  50% {
+    clip: rect(0, 80px, 20px, 0); }
+  80% {
+    clip: rect(0, 80px, 20px, 80px); }
+  100% {
+    clip: rect(0, 80px, 20px, 80px); } }
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .mar-top50 {
   margin-top: 5rem; }
 
@@ -634,6 +674,50 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: #000; }
+  .preloader .lines {
+    width: 8rem;
+    height: 4rem;
+    top: 50%;
+    left: 47%;
+    text-align: center;
+    position: absolute; }
+    .preloader .lines .line {
+      width: 8rem;
+      height: 1rem;
+      background-color: #fff;
+      position: absolute;
+      clip: rect(0, 0, 20px, 0); }
+      .preloader .lines .line.line-1 {
+        top: 0;
+        -webkit-animation: slide 2s ease 0s infinite;
+                animation: slide 2s ease 0s infinite; }
+      .preloader .lines .line.line-2 {
+        top: 1.5rem;
+        -webkit-animation: slide 2s ease 0.25s infinite;
+                animation: slide 2s ease 0.25s infinite; }
+      .preloader .lines .line.line-3 {
+        top: 3rem;
+        -webkit-animation: slide 2s ease 0.5s infinite;
+                animation: slide 2s ease 0.5s infinite; }
+  .preloader .loading-text {
+    position: fixed;
+    top: 60%;
+    left: 47%;
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: .3rem;
+    line-height: 1rem;
+    height: 1rem;
+    -webkit-animation: fade 1s ease 0s infinite;
+            animation: fade 1s ease 0s infinite;
+    z-index: 999; }
+
 .header {
   width: 100%;
   padding: 3.5rem 0;
@@ -1045,10 +1129,12 @@ table {
   margin-right: 3rem;
   color: #fff;
   opacity: .7;
-  padding-top: 1.6rem;
+  padding-top: 1.8rem;
   -webkit-transition: all ease-in 140ms;
   -o-transition: all ease-in 140ms;
   transition: all ease-in 140ms; }
+  .link-icon:last-child {
+    margin-right: 0; }
   .link-icon:hover {
     -webkit-transition: all ease-in 140ms;
     -o-transition: all ease-in 140ms;
@@ -1065,9 +1151,6 @@ table {
     -webkit-transition: all ease-in 140ms;
     -o-transition: all ease-in 140ms;
     transition: all ease-in 140ms; }
-
-.link-icon:last-child {
-  margin-right: 0; }
 
 @media (max-width: 1280px) {
   .photo {
@@ -1103,6 +1186,9 @@ table {
     font-size: 2rem; } }
 
 @media (max-width: 768px) {
+  .preloader .lines,
+  .preloader .loading-text {
+    left: 45%; }
   .one .h1 {
     font-size: 2.4rem;
     letter-spacing: 1rem;
@@ -1120,21 +1206,7 @@ table {
   .slider .slider__contents .p-responds {
     max-width: 70%; } }
 
-@media (max-width: 536px) {
-  .content .h2 {
-    font-size: 1.2rem;
-    margin-bottom: 5rem; }
-  .form-section .h1,
-  .form-section .form-close {
-    font-size: 2.4rem; }
-  .form-section .form1 .p {
-    font-size: 1.4rem; }
-  .form-section .form2 .input1 {
-    height: 4rem; }
-  .form-section .form2 .textarea {
-    height: 15rem;
-    max-height: 15rem;
-    margin-bottom: 2rem; }
+@media (max-width: 582px) {
   .cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1159,7 +1231,23 @@ table {
             align-items: center; }
   .circle {
     width: 16.6rem;
-    height: 16.6rem; }
+    height: 16.6rem; } }
+
+@media (max-width: 536px) {
+  .content .h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5rem; }
+  .form-section .h1,
+  .form-section .form-close {
+    font-size: 2.4rem; }
+  .form-section .form1 .p {
+    font-size: 1.4rem; }
+  .form-section .form2 .input1 {
+    height: 4rem; }
+  .form-section .form2 .textarea {
+    height: 15rem;
+    max-height: 15rem;
+    margin-bottom: 2rem; }
   .slider .slider__contents .p-responds {
     margin-top: 0rem; } }
 
@@ -1173,11 +1261,57 @@ table {
   .buttons-main .btn-right {
     margin-left: .5rem; } }
 
+@media (max-width: 478px) {
+  .preloader .lines,
+  .preloader .loading-text {
+    left: 43%; }
+  .form-section .content-flex {
+    margin-bottom: 1rem; }
+  .form-section .form-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .form-section .form-info .form1,
+    .form-section .form-info .form2 {
+      width: 100%;
+      max-width: 100%; }
+    .form-section .form-info .form1 .p {
+      margin-bottom: 2rem; }
+  .form-section .btn {
+    font-size: 1.4rem;
+    padding: 1rem 3rem;
+    margin-left: 0; }
+  .buttons-main .btn-left {
+    margin-right: 0rem;
+    margin-bottom: 3rem; }
+  .buttons-main .btn-right {
+    margin-left: 0rem; }
+  .link-icon {
+    margin-right: 1.5rem; } }
+
+@media (max-width: 380px) {
+  .link-icon {
+    width: 5.5rem;
+    height: 5.5rem;
+    padding-top: 1.2rem; }
+  .slider .slider__contents .p-responds {
+    max-width: 80%;
+    font-size: 1.4rem; } }
+
 @media (max-width: 320px) {
+  .preloader .lines,
+  .preloader .loading-text {
+    left: 41%; }
   .one .h1 {
     font-size: 2rem;
     letter-spacing: .4rem;
-    line-height: 3.4rem; } }
+    line-height: 3.4rem; }
+  .slider .person-info .h4 {
+    font-size: 1.6rem; }
+  .slider .person-info .p {
+    font-size: 1.2rem; } }
 
 @font-face {
   font-family: "Merriweather-Black";
@@ -1265,6 +1399,26 @@ a:focus, a:hover {
 @keyframes dash {
   0% {
     stroke-dashoffset: 136; } }
+
+@keyframes slide {
+  0% {
+    clip: rect(0, 0, 20px, 0); }
+  30% {
+    clip: rect(0, 80px, 20px, 0); }
+  50% {
+    clip: rect(0, 80px, 20px, 0); }
+  80% {
+    clip: rect(0, 80px, 20px, 80px); }
+  100% {
+    clip: rect(0, 80px, 20px, 80px); } }
+
+@keyframes fade {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .mar-top50 {
   margin-top: 5rem; }

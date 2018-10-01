@@ -1,5 +1,7 @@
 window.addEventListener("load", function(){
 
+$('.preloader').delay(2500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+
 //----------------------- HEADER --------------------------
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();

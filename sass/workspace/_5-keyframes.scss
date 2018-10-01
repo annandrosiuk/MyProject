@@ -5,6 +5,42 @@
   }
       
 
+@keyframes slide {
+    0% {
+      clip: rect(0, 0, 20px, 0);
+    }
+    
+    30% {
+      clip: rect(0, 80px, 20px, 0);
+    }
+    
+    50% {
+      clip: rect(0, 80px, 20px, 0);
+    }
+    
+    80% {
+      clip: rect(0, 80px, 20px, 80px);
+    }
+    
+    100% {
+      clip: rect(0, 80px, 20px, 80px);
+    }
+}
+  
+@keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    
+    50% {
+      opacity: 0;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+}
+
   //Mixins
 @mixin basic($height, $width) {
   height: $height;
