@@ -688,7 +688,8 @@ table {
   .preloader .lines {
     width: 8rem;
     height: 4rem;
-    top: 45%;
+    top: 50%;
+    left: 47%;
     text-align: center;
     position: absolute; }
     .preloader .lines .line {
