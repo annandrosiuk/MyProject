@@ -5,10 +5,10 @@
 
 .dropdown-menu {
     display: none;
-    @include position(absolute, 75px, none);
+    @include position(absolute, 6rem, none);
     opacity: 0.8;
     border-bottom: 1px solid $white;
-    z-index: 100;
+    z-index: 200;
     width: 100%;
 
     ul{
