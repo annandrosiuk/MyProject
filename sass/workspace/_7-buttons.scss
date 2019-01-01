@@ -86,3 +86,9 @@
   .form2 input:invalid ~ .btn[disabled] {
       display:inline-block;
   }
+
+  @media (max-width: 380px) {
+    .buttons-main {
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+    }}

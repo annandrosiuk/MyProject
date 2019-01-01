@@ -307,6 +307,11 @@ a:focus, a:hover {
 .form2 input:invalid ~ .btn[disabled] {
   display: inline-block; }
 
+@media (max-width: 380px) {
+  .buttons-main {
+    margin-top: 10rem;
+    margin-bottom: 10rem; } }
+
 .slider {
   height: 38rem;
   position: relative;
@@ -1262,6 +1267,17 @@ table {
     margin-left: .5rem; } }
 
 @media (max-width: 478px) {
+  .one {
+    padding-top: 10rem; }
+  h3.mar-top100,
+  .cards.mar-top100 {
+    margin-top: 5rem; }
+  .cards.mar-bot100 {
+    margin-bottom: 5rem; }
+  .btn.mar-bot100 {
+    margin-bottom: 8rem; }
+  .photo:last-child {
+    margin-bottom: 0rem; }
   .preloader .lines,
   .preloader .loading-text {
     left: 43%; }
@@ -1530,6 +1546,11 @@ a:focus, a:hover {
 .btn:not([disabled]),
 .form2 input:invalid ~ .btn[disabled] {
   display: inline-block; }
+
+@media (max-width: 380px) {
+  .buttons-main {
+    margin-top: 10rem;
+    margin-bottom: 10rem; } }
 
 .slider {
   height: 38rem;

@@ -662,6 +662,22 @@
 }
 
 @media (max-width: 478px) {
+  .one {
+    padding-top: 10rem;
+  }
+  h3.mar-top100,
+  .cards.mar-top100,{
+    margin-top: 5rem;
+  }
+  .cards.mar-bot100{
+    margin-bottom: 5rem;
+  }
+  .btn.mar-bot100{
+    margin-bottom: 8rem;
+  }
+  .photo:last-child{
+    margin-bottom: 0rem;
+  }
   .preloader {
     .lines,
     .loading-text{
@@ -713,6 +729,7 @@
 }
 
 @media (max-width: 380px) {
+  
   .link-icon {
     width: 5.5rem;
     height: 5.5rem;
