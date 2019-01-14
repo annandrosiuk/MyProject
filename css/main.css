@@ -840,7 +840,8 @@ table {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: rgba(36, 30, 24, 0.95); }
+  background-color: rgba(36, 30, 24, 0.95);
+  opacity: 0; }
 
 .form-contain {
   margin: 7rem auto;
